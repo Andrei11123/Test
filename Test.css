@@ -134,15 +134,15 @@ input:checked+.button3::before {
 
 .container2 {
     position: absolute;
-    top: 110%;
-    left: 85%;
+    top: 230px;
+    left: 652px;
     transform: translate(-150%, -41%);
 
 }
 
 .input1 {
     height: 35px;
-    width: 380px;
+    width: 382px;
     padding: 0 10px;
     padding-left: 40px;
 }
@@ -255,7 +255,7 @@ input:checked+.button3::before {
     text-align: none;
     top: 120px;
     width: 440px;
-    left: 44%; /* Use 50% to center the dropdown relative to the button */
+    left: 44%; 
     transform: translateX(-44%);
     background-color: #f9f9f9;
     box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
@@ -276,4 +276,49 @@ input:checked+.button3::before {
 
 .dropdown1:hover .dropdown-content1 {
     display: block;
+}
+
+.grid-container7{
+    display: grid;
+    position: relative;
+    top: 250px;
+    right: 20px;
+    grid-template-columns: repeat(7, 1fr); 
+    margin: 20px;
+    background-color: white;
+    font-size: 12px;
+    width: 56%; 
+    max-width: 700px; 
+}
+.grid-item {
+    border: 1px solid #dddddd;
+    padding: 12px 0;
+    text-align: center;
+    height: 15px; 
+    box-sizing: border-box;
+}
+
+.day-col {
+    background-color: #4CAF50;
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+}
+
+.header {
+    background-color: #4CAF50;
+    color: white;
+    font-weight: bold;
+}
+
+.subtext {
+    display: flex;
+    align-items: center;
+    position: relative;
+    top: 250px;
+    left: 20px;
+    font-size: 14px;
+    color: white;
+    font-weight: bold;
+    
 }
