@@ -106,7 +106,7 @@ body {
     position: relative;
 }
 
-.button3::before{
+.button3::before {
     position: absolute;
     content: "";
     background-color: white;
@@ -116,11 +116,11 @@ body {
     transition: 0.2s;
 }
 
-input:checked +.button3 {
+input:checked+.button3 {
     background-color: green;
 }
 
-input:checked +.button3::before {
+input:checked+.button3::before {
     transform: translateX(30px);
 }
 
@@ -129,16 +129,17 @@ input:checked +.button3::before {
     width: 0;
     height: 0;
     opacity: 0;
-  }
+}
 
 
 .container2 {
     position: absolute;
     top: 110%;
     left: 85%;
-    transform: translate(-150%,-41%);
+    transform: translate(-150%, -41%);
 
 }
+
 .input1 {
     height: 35px;
     width: 380px;
@@ -148,28 +149,28 @@ input:checked +.button3::before {
 
 .search-icon {
     position: absolute;
-    left: 10px; 
+    left: 10px;
     top: 10px;
-    font-size: 20px;  
-    color: rgb(75, 187, 47); 
-    pointer-events: none; 
+    font-size: 20px;
+    color: rgb(75, 187, 47);
+    pointer-events: none;
 }
-  
 
-.container4{
+
+.container4 {
     position: relative;
     width: 100%;
 }
 
 .scrollable-list {
     position: absolute;
-    top: 90px; 
+    top: 90px;
     left: 0;
     width: 56%;
-    height: 100px; 
-    overflow-y: auto; 
+    height: 100px;
+    overflow-y: auto;
     border: 2px solid #ccc;
-    background-color: white; 
+    background-color: white;
 }
 
 .scrollable-list ul {
@@ -190,10 +191,11 @@ input:checked +.button3::before {
 
 .dropdown-button {
     position: relative;
+    text-align: left;
     top: 210px;
     width: 320%;
-    background-color: #4CAF50;
-    color: white;
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
     padding: 10px 20px;
     border: none;
     cursor: pointer;
@@ -204,7 +206,7 @@ input:checked +.button3::before {
     display: none;
     position: absolute;
     width: 320%;
-    top: 660%; 
+    top: 660%;
     left: 0;
     background-color: #f9f9f9;
     box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
@@ -224,5 +226,54 @@ input:checked +.button3::before {
 }
 
 .dropdown:hover .dropdown-content {
+    display: block;
+}
+
+
+.dropdown1 {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-button1 {
+    position: relative;
+    text-align: left;
+    top: 260px;
+    width: 355%;
+    right: 140px;
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.dropdown-content1 {
+    display: none;
+    position: absolute;
+    text-align: none;
+    top: 120px;
+    width: 440px;
+    left: 44%; /* Use 50% to center the dropdown relative to the button */
+    transform: translateX(-44%);
+    background-color: #f9f9f9;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    z-index: 1;
+}
+
+.dropdown-content1 li {
+    padding: 8px 12px;
+    cursor: pointer;
+}
+
+.dropdown-content1 li:hover {
+    background-color: #ddd;
+}
+
+.dropdown1:hover .dropdown-content1 {
     display: block;
 }
