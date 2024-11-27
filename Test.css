@@ -33,6 +33,38 @@ body {
     text-align: center
 }
 
-.Selection {
-    
+.Selection1 {
+    display: flex;
+    justify-content: space-between;
+    width: 56%;
+}
+
+.button1 {
+    background-color: #ffffff;
+    border: none;
+    color: rgb(0, 0, 0);
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+.button2 {
+    background-color: #0a750a;
+    border: none;
+    color: rgb(245, 245, 245);
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+.button2:hover {
+    background-color: white;
 }
