@@ -311,14 +311,77 @@ input:checked+.button3::before {
     font-weight: bold;
 }
 
+
 .subtext {
     display: flex;
-    align-items: center;
+    flex-direction: column;  
+    align-items: center; 
     position: relative;
     top: 250px;
-    left: 20px;
+    right: 150px;
     font-size: 14px;
     color: white;
     font-weight: bold;
-    
+}
+
+.line {
+    margin: 20px 0;  
+}
+
+.subtext p {
+    margin: 12px; 
+}
+
+.subtext p span {
+    margin-right: 20px; 
+}
+
+.buttons-container {
+    display: flex;
+    position: relative;
+    top: 250px;
+    right: 200px;
+    justify-content: center; 
+    gap: 30px; 
+    margin-top: auto;
+}
+
+.button11{
+    background-color: #4CAF50; 
+    color: white;
+    height: 30px;
+    width: 120px;
+    font-size: 12px;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+}
+
+.button12{
+    background-color: #da1515;
+    color: white;
+    font-size: 14px;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+}
+
+.button13{
+    background-color: #7e037e; 
+    color: white;
+    font-size: 14px;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+}
+
+.spantext {
+    display: flex;
+    position: relative;
+    font-size: 20px;
+    top: 290px;
+    background-color: rgb(255, 255, 255);
+    color: rgb(4, 139, 15);
+    height: 60px;
+    width: 430px;
 }
